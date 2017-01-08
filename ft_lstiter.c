@@ -1,18 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: agarcia- <agarcia-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: agarcia- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/21 09:46:18 by agarcia-          #+#    #+#             */
-/*   Updated: 2017/01/08 16:52:44 by agarcia-         ###   ########.fr       */
+/*   Created: 2017/01/08 18:37:17 by agarcia-          #+#    #+#             */
+/*   Updated: 2017/01/08 18:55:26 by agarcia-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr(char *str)
+void ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
-	write(1, str, ft_strlen(str));
+	while(lst)
+	{
+		f(lst);
+		lst = lst->next;
+	}
 }
