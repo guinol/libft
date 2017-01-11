@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int ft_nb_words(const char *ch, char c)
+int	ft_nb_words(const char *ch, char c)
 {
 	int i;
 	int nb;
@@ -30,7 +30,7 @@ int ft_nb_words(const char *ch, char c)
 	return (nb);
 }
 
-int wrdlen(const char *s, char c)
+int	wrdlen(const char *s, char c)
 {
 	int i;
 
@@ -43,7 +43,7 @@ int wrdlen(const char *s, char c)
 	return (i);
 }
 
-char ** ft_strsplit(char const *s, char c)
+char 	**ft_strsplit(char const *s, char c)
 {
 	char **r;
 	int cnt;

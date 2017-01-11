@@ -22,7 +22,7 @@ int		ft_atoi(const char *s)
 	while (s[i] == '\v' || s[i] == '\t' || s[i] == '\f' || s[i] == '\n' ||
 			s[i] == '\r' || s[i] == ' ')
 		i++;
-		if (s[i] == '-')
+	if (s[i] == '-')
 	{
 		neg = -1;
 		i++;

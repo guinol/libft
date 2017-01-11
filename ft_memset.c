@@ -11,15 +11,14 @@
 /* ************************************************************************** */
 
 #include <string.h>
-#include <stdlib.h>
 #include "libft.h"
 
 void *ft_memset(void *r, int c, size_t len)
 {
-  unsigned char *ptr;
+	unsigned char *ptr;
 
-  ptr = (unsigned char*)r;
-  while (len-- > 0)
-    *ptr++ = (unsigned char)c;
-  return (r);
+	ptr = (unsigned char*)r;
+	while (len-- > 0)
+		*ptr++ = (unsigned char)c;
+	return (r);
 }

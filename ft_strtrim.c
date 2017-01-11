@@ -14,11 +14,11 @@
 
 char	*ft_strtrim(char const *s)
 {
-	char		*r;
+	char	*r;
 	size_t	i;
-	size_t			deb;
-	size_t			fin;
-	size_t			l;
+	size_t	deb;
+	size_t	fin;
+	size_t	l;
 
 	i = 0;
 	deb = 0;

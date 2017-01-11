@@ -22,10 +22,10 @@ static void	ft_itoa_neg(int *n, int *neg)
 	}
 }
 
-char	*ft_itoa(int n)
+char		*ft_itoa(int n)
 {
 	int		i;
-	char	*s;
+	char		*s;
 	int		num;
 	int		neg;
 
