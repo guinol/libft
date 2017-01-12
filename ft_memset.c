@@ -6,14 +6,13 @@
 /*   By: agarcia- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/02 12:23:16 by agarcia-          #+#    #+#             */
-/*   Updated: 2016/12/02 12:23:20 by agarcia-         ###   ########.fr       */
+/*   Updated: 2017/01/12 17:06:28 by agarcia-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
-void *ft_memset(void *r, int c, size_t len)
+void	*ft_memset(void *r, int c, size_t len)
 {
 	unsigned char *ptr;
 

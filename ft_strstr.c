@@ -6,7 +6,7 @@
 /*   By: agarcia- <agarcia-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/19 17:21:18 by agarcia-          #+#    #+#             */
-/*   Updated: 2016/12/19 18:03:45 by agarcia-         ###   ########.fr       */
+/*   Updated: 2017/01/12 15:56:00 by agarcia-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@ char	*ft_strstr(const char *big, const char *little)
 	i = 0;
 	j = 0;
 	if (little[0] == '\0')
-		return((char *)big);
+		return ((char *)big);
 	if (ft_strlen(big) < ft_strlen(little))
 		return (NULL);
-	while(big[i] != '\0')
+	while (big[i] != '\0')
 	{
 		if (big[i] == little[j])
 		{

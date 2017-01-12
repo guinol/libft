@@ -6,15 +6,13 @@
 /*   By: agarcia- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/02 12:09:28 by agarcia-          #+#    #+#             */
-/*   Updated: 2016/12/02 12:09:31 by agarcia-         ###   ########.fr       */
+/*   Updated: 2017/01/12 17:06:01 by agarcia-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <string.h>
 #include "libft.h"
 
-void *ft_memalloc(size_t size)
+void	*ft_memalloc(size_t size)
 {
 	void *mem;
 

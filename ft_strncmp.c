@@ -6,7 +6,7 @@
 /*   By: agarcia- <agarcia-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/19 18:56:06 by agarcia-          #+#    #+#             */
-/*   Updated: 2016/12/19 19:00:21 by agarcia-         ###   ########.fr       */
+/*   Updated: 2017/01/12 21:10:40 by agarcia-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,4 @@ int	ft_strncmp(char *s1, char *s2, size_t n)
 		i++;
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
+strsub + strcmp

@@ -6,13 +6,13 @@
 /*   By: agarcia- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/08 22:33:29 by agarcia-          #+#    #+#             */
-/*   Updated: 2016/12/09 06:02:47 by agarcia-         ###   ########.fr       */
+/*   Updated: 2017/01/12 15:54:04 by agarcia-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcpy(char * dst, const char * src)
+char	*ft_strcpy(char *dst, const char *src)
 {
 	size_t i;
 

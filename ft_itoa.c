@@ -6,11 +6,10 @@
 /*   By: agarcia- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/02 09:09:13 by agarcia-          #+#    #+#             */
-/*   Updated: 2016/12/02 11:50:17 by agarcia-         ###   ########.fr       */
+/*   Updated: 2017/01/12 17:05:17 by agarcia-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 static void	ft_itoa_neg(int *n, int *neg)
@@ -25,7 +24,7 @@ static void	ft_itoa_neg(int *n, int *neg)
 char		*ft_itoa(int n)
 {
 	int		i;
-	char		*s;
+	char	*s;
 	int		num;
 	int		neg;
 

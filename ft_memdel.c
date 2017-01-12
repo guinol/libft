@@ -6,16 +6,17 @@
 /*   By: agarcia- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/02 13:44:45 by agarcia-          #+#    #+#             */
-/*   Updated: 2016/12/02 13:44:48 by agarcia-         ###   ########.fr       */
+/*   Updated: 2017/01/12 17:06:17 by agarcia-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
-void ft_memdel(void **ap)
+void	ft_memdel(void **ap)
 {
-	if (*ap)
+	if (ap)
+	{
 		free(*ap);
-	*ap = NULL;
+		*ap = NULL;
+	}
 }

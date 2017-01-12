@@ -6,7 +6,7 @@
 /*   By: agarcia- <agarcia-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/20 11:06:20 by agarcia-          #+#    #+#             */
-/*   Updated: 2016/12/20 11:09:18 by agarcia-         ###   ########.fr       */
+/*   Updated: 2017/01/12 15:43:41 by agarcia-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,6 @@
 
 void	ft_putstr_fd(char const *s, int fd)
 {
-	int		i;
-
-	i = 0;
-	while (s[i] != '\0')
-	{
-		ft_putchar_fd(s[i], fd);
-		i++;
-	}
+	if (s)
+		write(fd, s, ft_strlen(s));
 }

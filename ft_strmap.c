@@ -6,7 +6,7 @@
 /*   By: agarcia- <agarcia-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/02 15:01:16 by agarcia-          #+#    #+#             */
-/*   Updated: 2016/12/19 19:41:31 by agarcia-         ###   ########.fr       */
+/*   Updated: 2017/01/12 15:08:01 by agarcia-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,22 @@
 
 char	*ft_strmap(char const *s, char (*f)(char))
 {
-	char *ns;
-	int i;
+	char	*ns;
+	int		i;
 
-	ns = (char*)malloc(sizeof(char) * ft_strlen(s) + 1);
-	if (ns == NULL)
-		return (NULL);
-	i = 0;
-	while (s[i])
+	if (s)
 	{
-		ns[i] = f(s[i]);
-		i++;
+		ns = (char*)malloc(sizeof(char) * ft_strlen(s) + 1);
+		if (ns == NULL)
+			return (NULL);
+		i = 0;
+		while (s[i])
+		{
+			ns[i] = f(s[i]);
+			i++;
+		}
+		ns[i] = '\0';
+		return (ns);
 	}
-	ns[i] = '\0';
-	return (ns);
+	return (0);
 }

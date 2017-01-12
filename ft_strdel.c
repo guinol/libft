@@ -6,16 +6,17 @@
 /*   By: agarcia- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/02 14:34:29 by agarcia-          #+#    #+#             */
-/*   Updated: 2016/12/02 14:34:31 by agarcia-         ###   ########.fr       */
+/*   Updated: 2017/01/12 17:07:19 by agarcia-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 void	ft_strdel(char **as)
 {
-	if (*as)
+	if (as)
+	{
 		free(*as);
-	*as = NULL;
+		*as = NULL;
+	}
 }
