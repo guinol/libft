@@ -6,7 +6,7 @@
 /*   By: agarcia- <agarcia-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/02 14:45:42 by agarcia-          #+#    #+#             */
-/*   Updated: 2017/01/12 14:58:44 by agarcia-         ###   ########.fr       */
+/*   Updated: 2017/01/16 16:40:38 by agarcia-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,12 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	unsigned int i;
 
-	if (s)
+	i = 0;
+	if (s && f)
 	{
-		i = 0;
-		while (s[i] != 0)
+		while (s[i])
 		{
-			f(i, s + i);
+			f(i, (s + i));
 			i++;
 		}
 	}

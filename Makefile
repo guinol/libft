@@ -42,7 +42,6 @@ SRCS = 	ft_putchar.c	\
 		ft_memcmp.c	\
 		ft_strcpy.c	\
 		ft_strncpy.c	\
-		ft_pause.c	\
 		ft_strcat.c	\
 		ft_strncat.c	\
 		ft_strlcat.c	\
@@ -60,32 +59,21 @@ SRCS = 	ft_putchar.c	\
 		ft_lstiter.c \
 		ft_lstmap.c	\
 		ft_strsplit.c
-TEST = main.c
 
 
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
-%.o: %.c
-	gcc -Wall -Wextra -Werror -c $< -o $@ -I includes
-
-$(NAME) : $(OBJS)
+$(NAME) :
+	gcc -Wall -Wextra -Werror -c $(SRCS) -I libft.h
 	ar rc $@ $(OBJS)
 	ranlib $@
 
-main:
-	gcc -Wall -Wextra -Werror -I includes -c $(TEST)
-
-testing: libft.a main
-	gcc -Wall -Wextra -Werror main.o libft.a -I includes -o testing
-
 clean:
 	rm -f $(OBJS)
-	rm -f main.o
 
 fclean: clean
 	rm -f $(NAME)
-	rm -f testing
 
 re: fclean all
