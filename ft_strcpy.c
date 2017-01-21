@@ -6,7 +6,7 @@
 /*   By: agarcia- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/08 22:33:29 by agarcia-          #+#    #+#             */
-/*   Updated: 2017/01/12 15:54:04 by agarcia-         ###   ########.fr       */
+/*   Updated: 2017/01/21 21:27:15 by agarcia-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,14 @@
 char	*ft_strcpy(char *dst, const char *src)
 {
 	size_t i;
+	size_t size;
 
 	i = 0;
-	while (i < ft_strlen((char *)src))
+	size = ft_strlen(src) + 1;
+	while (i < size)
 	{
 		dst[i] = src[i];
 		i++;
 	}
-	dst[i] = '\0';
 	return (dst);
 }

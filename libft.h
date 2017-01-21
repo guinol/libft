@@ -6,7 +6,7 @@
 /*   By: agarcia- <agarcia-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/24 07:37:59 by agarcia-          #+#    #+#             */
-/*   Updated: 2017/01/16 15:50:43 by agarcia-         ###   ########.fr       */
+/*   Updated: 2017/01/21 16:05:43 by agarcia-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int				ft_atoi(const char *s);
 int				ft_toupper(int c);
 int				ft_tolower(int c);
 char			*ft_itoa(int n);
-char			*ft_strdup(char *src);
+char			*ft_strdup(const char *src);
 void			*ft_memalloc(size_t size);
 void			*ft_memset(void *r, int c, size_t len);
 void			ft_memdel(void **ap);
