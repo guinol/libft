@@ -6,7 +6,7 @@
 /*   By: agarcia- <agarcia-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/24 07:37:59 by agarcia-          #+#    #+#             */
-/*   Updated: 2017/01/21 16:05:43 by agarcia-         ###   ########.fr       */
+/*   Updated: 2017/01/24 16:03:43 by agarcia-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ typedef struct	s_list
 void			ft_putchar(char c);
 void			ft_putstr(char *s);
 void			ft_putendl(char const *s);
-int				ft_strcmp(char *s1, char *s2);
+int				ft_strcmp(const char *s1, const char *s2);
 void			ft_swap(int *a, int *b);
 size_t			ft_strlen(const char *s);
 void			ft_putnbr(int n);
@@ -71,7 +71,7 @@ char			*ft_strchr(const char *s, int c);
 char			*ft_strrchr(const char *s, int c);
 char			*ft_strstr(const char *haystack, const char *needle);
 char			*ft_strnstr(const char *big, const char *little, size_t len);
-int				ft_strncmp(char *s1, char *s2, size_t n);
+int				ft_strncmp(const char *s1, const char *s2, size_t n);
 void			ft_putstr_fd(char const *s, int fd);
 void			ft_putendl_fd(char const *s, int fd);
 void			ft_putnbr_fd(int n, int fd);

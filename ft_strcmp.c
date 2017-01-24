@@ -6,13 +6,13 @@
 /*   By: agarcia- <agarcia-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/21 09:48:22 by agarcia-          #+#    #+#             */
-/*   Updated: 2016/12/19 18:55:21 by agarcia-         ###   ########.fr       */
+/*   Updated: 2017/01/24 16:03:51 by agarcia-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strcmp(char *s1, char *s2)
+int	ft_strcmp(const char *s1, const char *s2)
 {
 	int i;
 
