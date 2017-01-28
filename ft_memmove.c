@@ -6,7 +6,7 @@
 /*   By: agarcia- <agarcia-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/08 17:19:16 by agarcia-          #+#    #+#             */
-/*   Updated: 2017/01/21 14:02:49 by agarcia-         ###   ########.fr       */
+/*   Updated: 2017/01/26 12:08:26 by agarcia-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,29 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char		*tmp;
+	unsigned char	*d;
+	unsigned char	*s;
+	size_t			i;
 
-	tmp = (char *)ft_memalloc(len + 1);
-	if (tmp != NULL)
+	i = 0;
+	d = (unsigned char*)dst;
+	s = (unsigned char*)src;
+	if (s < d)
 	{
-		ft_memcpy(tmp, src, len);
-		ft_memcpy(dst, tmp, len);
-		free(tmp);
+		i++;
+		while (i <= len)
+		{
+			d[len - i] = s[len - i];
+			i++;
+		}
+	}
+	else
+	{
+		while (i < len)
+		{
+			d[i] = s[i];
+			i++;
+		}
 	}
 	return (dst);
 }
